@@ -351,6 +351,43 @@ img {
   color: var(--primary-text-color);
 }
 
+.team-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.team-link {
+  width: 44px;
+  height: 44px;
+  margin-top: 16px;
+}
+
+/* .team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+} */
+
+/* not done!!! */
+.social-links {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+
+  padding: 12px;
+}
+
+.social-links:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .social-links:hover,
+.social-links:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+} */
+
 /* Секция постоянные клиенты */
 
 .logo-list {
