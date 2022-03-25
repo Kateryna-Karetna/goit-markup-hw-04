@@ -322,6 +322,12 @@ img {
   margin-top: 50px;
 }
 
+.team-img {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .card-item {
   padding-top: var(--primary-item-size);
   padding-bottom: var(--primary-item-size);
@@ -357,36 +363,36 @@ img {
 }
 
 .team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  background-color: var(--bgc-secondary-color);
+  border-radius: 50%;
+
   margin-top: 16px;
 }
 
-/* .team-link:hover,
+.team-link:hover,
 .team-link:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
-} */
+}
 
-/* not done!!! */
+.team-link:hover .social-links,
+.team-link:focus .social-links {
+  fill: var(--primary-white-color);
+}
+
 .social-links {
-  width: 44px;
-  height: 44px;
+  background-size: 20px;
+  background-position: center;
   fill: #afb1b8;
-
-  padding: 12px;
 }
 
 .social-links:not(:last-child) {
   margin-right: 10px;
 }
-
-/* .social-links:hover,
-.social-links:focus {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
-  border-radius: 50%;
-} */
 
 /* Секция постоянные клиенты */
 
@@ -424,6 +430,10 @@ img {
   background-color: var(--background-color);
 }
 
+.footer-container {
+  display: flex;
+}
+
 .address {
   margin-top: 20px;
 
@@ -442,6 +452,48 @@ img {
 
 .contacts-footer:not(:first-child) {
   margin-top: 9px;
+}
+
+.join-group {
+  margin-left: 70px;
+}
+
+.join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-white-color);
+
+  padding-top: 12px;
+}
+
+.icons-group {
+  margin-top: 20px;
+}
+
+.join-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 10%);
+  border-radius: 50%;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join-icons {
+  background-size: 20px;
+  background-position: center;
+  fill: var(--primary-white-color);
+}
+
+.join-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Cтили для страницы портфолио */
@@ -483,6 +535,9 @@ img {
 .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .btn-item:not(:last-child) {
@@ -502,6 +557,12 @@ img {
 .portfolio-item {
   margin-bottom: var(--primary-item-size);
   margin-left: var(--primary-item-size);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-element {
